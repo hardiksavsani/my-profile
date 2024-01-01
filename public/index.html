@@ -1,43 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta http-equiv="---AA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="container">
+      <!-- header design -->
+      <header class="header">
+        <a href="images/logo.png" class="logo">profile</a>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+          <a href="#home">Homes</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">contact</a>
+        </nav>
+      </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <!-- home section Design -->
+
+      <section class="home" id="home">
+        <div class="home-content">
+          <h3>Hello,it's me</h3>
+          <h1>Hardik Savsani</h1>
+          <h3>And I'm a <span class="multiple-text"></span></h3>
+          <br />
+          <p>
+            Build a Complete Responsive Personal Portfolie Website using HTML
+            CSS and Javascript as well React Js, Build a Complete Responsive
+            Personal Portfolio Website,
+          </p>
+          <div class="social-media">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a
+              href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BfdNR8xGZRESK7%2F%2BDp3Drlw%3D%3D"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+          </div>
+          <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+          <img src="images/hardik1.png" alt="" />
+        </div>
+      </section>
+
+      <!-- About section design -->
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="images/hardik1.png" alt="images" />
+        </div>
+
+        <div class="about-content">
+          <h2 class="heading">About <span>me</span></h2>
+          <h3>Full stack Developer!</h3>
+          <p>
+            Get started as a front-end web developer using HTML, CSS,
+            JavaScript, and Bootstrap! Join millions of learners from around the
+            world already learning on Udemy. Moreover, i am pursuing Business of
+            Information Technology in Haaga-Helia University Of Applied science
+            ...
+          </p>
+
+          <a href="# " class="btn">Read More </a>
+        </div>
+      </section>
+
+      <!-- Services  section design -->
+
+      <section class="services" id="services">
+        <h2 class="heading">Our <span>services</span></h2>
+
+        <div class="services-container">
+          <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Frontend developer</h3>
+            <p>
+              Frontend developers build the look and feel of websites and apps
+              using HTML, CSS, and JavaScript. They collaborate with designers
+              and backend developers to create user-friendly and visually
+              appealing interfaces.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+          <div class="services-box">
+            <i class="bx bxs-paint"></i>
+            <h3>Backend developer</h3>
+            <p>
+              Backend developers build the server-side of websites and apps,
+              handling databases and server logic.Additionally,backend
+              developers focus on optimizing application
+              performance,implementing robust APIs,enhance the overall user
+              experience.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+          <div class="services-box">
+            <i class="bx bx-bar-chart-alt"></i>
+            <h3>Data analysts</h3>
+            <p>
+              Data analysts analyze large datasets, extract insights, and inform
+              business decisions using statistical methods and data
+              visualization tools. They contribute to organizational efficiency
+              and problem-solving through data-driven insights.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section design -->
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+          <div class="portfolio-box">
+            <img src="images/Picture1.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Web Design</h4>
+              <p>
+                Web designers create visually appealing and user-friendly
+                websites by focusing on layout, color, and typography. They use
+                graphic design tools and collaborate with developers to achieve
+                a balance between aesthetics and functionality.
+              </p>
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="images/Picture2.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Data analysts</h4>
+              <p>
+                Data analysts extract insights from large datasets, informing
+                business decisions through statistical analysis and data
+                visualization. They play a key role in optimizing performance
+                and problem-solving based on data-driven insights.
+              </p>
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="images/Picture3.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Web Development</h4>
+              <p>
+                Web development is the creation and maintenance of websites and
+                web applications. It includes both frontend (user interface) and
+                backend (server-side) development, utilizing languages like
+                HTML, CSS, JavaScript, and others. The goal is to produce
+                visually appealing, responsive, and functional online
+                experiences.
+              </p>
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="images/Picture4.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>AI</h4>
+              <p>
+                AI creates smart machines. Narrow AI is task-specific; general
+                AI mimics human intelligence. Machine learning, especially deep
+                learning, enables data-driven learning. Applications range from
+                healthcare to virtual assistants. Ethical concerns, like bias
+                and privacy, demand responsible use.
+              </p>
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="images/Picture5.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Web3</h4>
+              <p>
+                Web3 is the next internet generation, leveraging decentralized
+                protocols and blockchain tech for a user-centric, transparent,
+                and inclusive online experience. It promotes user control over
+                data and trustless peer-to-peer transactions, facilitated by
+                platforms like Ethereum and Polkadot.
+              </p>
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="images/Picture6.jpg" alt="" />
+            <div class="portfolio-layer">
+              <h4>Blockchain Development</h4>
+              <p>
+                Blockchain development: secure, decentralized ledgers with smart
+                contracts and cryptocurrencies. Used in finance, supply chain,
+                healthcare. Emphasizes scalability, interoperability, and
+                cryptographic security. Enables transparency without central
+                control.
+              </p>
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section design -->
+
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email Adress" />
+          </div>
+
+          <div class="input-box">
+            <input type="text" placeholder="Mobile Number" />
+            <input type="text" placeholder="Email Subject " />
+          </div>
+
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="20"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="Submit" value="Send Message" class="btn" />
+        </form>
+      </section>
+
+      <!-- footer design -->
+      <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2023 by Codehal | All Right Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </footer>
+
+      <!-- scroll reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!-- typed js -->
+
+      <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+      <!-- custom JavaScript -->
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
